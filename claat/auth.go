@@ -34,8 +34,8 @@ const (
 	scopeDriveReadOnly = "https://www.googleapis.com/auth/drive.readonly"
 
 	// program credentials for installed apps
-	googClient = "183908478743-e8rth9fbo7juk9eeivgp23asnt791g63.apps.googleusercontent.com"
-	googSecret = "ljELuf5jUrzcOxZGL7OQfkIC"
+	googClient = "1037441715560-4da18bmk6dr2qd46c430fkf2n2isf11d.apps.googleusercontent.com"
+	googSecret = "mUnGxRIwUEpxiGPqAapA0yRx"
 
 	// token providers
 	providerGoogle = "goog"

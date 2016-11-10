@@ -45,7 +45,7 @@ clean:
 	rm -rf $(OUTDIR) render/tmpldata.go .test .lint
 
 $(OUTDIR)/claat: $(SRCS) VERSION
-	go build -o $@ -ldflags "-X main.version=$(VERSION)"
+	go build -o $@ -ldflags '-extldflags "-static -s" -X main.version=$(VERSION)'
 
 $(OUTDIR)/claat-%: GOOS=$(firstword $(subst -, ,$*))
 $(OUTDIR)/claat-%: GOARCH=$(subst .exe,,$(word 2,$(subst -, ,$*)))
